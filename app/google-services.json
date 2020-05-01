@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1008499531841",
+    "firebase_url": "https://e-examapp.firebaseio.com",
+    "project_id": "e-examapp",
+    "storage_bucket": "e-examapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1008499531841:android:8939eb5dea5bdb7d75a6c0",
+        "android_client_info": {
+          "package_name": "com.example.e_examapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1008499531841-a1qestj178js2o7aqrsukdgu85lpmkmn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC98dMQwGJJy8qhuL85a7_nr1TC-jLZZhY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1008499531841-a1qestj178js2o7aqrsukdgu85lpmkmn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

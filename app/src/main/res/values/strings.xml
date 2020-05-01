@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">e-examApp</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="computer_architecture">Computer Architecture</string>
+    <string name="computer_networks">Computer Networks</string>
+    <string name="computer_systems_analysis">Computer Systems analysis</string>
+    <string name="data_structures">Data Structures</string>
+    <string name="already_register">Already Register ?</string>
+    <string name="login">Login</string>
+    <string name="back_to_main">Back To Main</string>
+    <string name="delete_fields">Delete Fields</string>
+
+    <string-array name="usertype">
+
+        <item>Professor</item>
+        <item>Student</item>
+    </string-array>
+</resources>

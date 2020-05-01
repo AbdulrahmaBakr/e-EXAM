@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_prof_sign"
+    android:orientation="vertical"
+    tools:context=".ComputerProgramming">
+
+    <EditText
+
+        android:id="@+id/chapterName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Chapter Name"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="Content of Chapter"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="Content of Chapter"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="Content of Chapter"
+        android:inputType="text" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <Button
+
+            android:id="@+id/add"
+            android:layout_width="64dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="10dp"
+
+            android:onClick="saveChapter"
+            android:text="Add"
+            android:textColor="#CE946F9A"
+            android:background="@drawable/newstyle"
+            android:textAllCaps="false"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:background="@drawable/newstyle"
+            android:textColor="#CE946F9A"
+            android:id="@+id/load"
+            android:layout_width="64dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="10dp"
+
+            android:text="Load"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/update"
+            android:layout_width="64dp"
+            android:layout_height="45dp"
+            android:textColor="#CE946F9A"
+            android:background="@drawable/newstyle"
+            android:text="Update"
+            android:textAllCaps="false" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/newstyle"
+        android:text="Deleted Contents"
+        android:textAllCaps="false"
+        android:textColor="#CE946F9A" />
+
+    <Button
+        android:id="@+id/ShowAll"
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/newstyle"
+        android:text="Show All Data"
+        android:textAllCaps="false"
+        android:textColor="#CE946F9A" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:id="@+id/dataview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textSize="20sp" />
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.core.widget.NestedScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="177dp">
+
+        <TextView
+            android:id="@+id/alldataview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textSize="20sp" />
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

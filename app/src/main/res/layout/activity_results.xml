@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/wall"
+    tools:context=".results">
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Degree"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="35dp" />
+
+    <TextView
+        android:id="@+id/degree"
+        android:layout_marginBottom="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="35dp" />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="of 10"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="35dp" />
+
+    <Button
+        android:id="@+id/donebtn"
+        android:background="@drawable/style_btn"
+        android:text="Done"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

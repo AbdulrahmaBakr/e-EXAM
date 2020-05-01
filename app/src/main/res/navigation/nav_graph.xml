@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/main">
+    <fragment
+        android:id="@+id/admin_login"
+        android:name="com.example.e_examapp.admin_login"
+        android:label="admin_login" >
+        <action
+            android:id="@+id/action_admin_login_to_main"
+            app:destination="@id/main" />
+        <action
+            android:id="@+id/action_admin_login_to_admin_profile"
+            app:destination="@id/admin_profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/prof_student_login"
+        android:name="com.example.e_examapp.prof_student_login"
+        android:label="prof_student_login" >
+        <action
+            android:id="@+id/action_prof_student_login_to_register_prof_student"
+            app:destination="@id/register_prof_student" />
+
+        <action
+            android:id="@+id/action_prof_student_login_to_student_profile"
+            app:destination="@id/student_profile" />
+        <action
+            android:id="@+id/action_prof_student_login_to_professor_profile"
+            app:destination="@id/professor_profile" />
+        <action
+            android:id="@+id/action_prof_student_login_to_main"
+            app:destination="@id/main" />
+    </fragment>
+    <fragment
+        android:id="@+id/register_prof_student"
+        android:name="com.example.e_examapp.register_prof_student"
+        android:label="register_prof_student" >
+        <action
+            android:id="@+id/action_register_prof_student_to_professor_profile"
+            app:destination="@id/professor_profile" />
+        <action
+            android:id="@+id/action_register_prof_student_to_student_profile"
+            app:destination="@id/student_profile" />
+        <action
+            android:id="@+id/action_register_prof_student_to_prof_student_login"
+            app:destination="@id/prof_student_login" />
+        <action
+            android:id="@+id/action_register_prof_student_to_main"
+            app:destination="@id/main" />
+    </fragment>
+    <fragment
+        android:id="@+id/admin_profile"
+        android:name="com.example.e_examapp.admin_profile"
+        android:label="admin_profile" >
+        <action
+            android:id="@+id/action_admin_profile_to_levels_deprat"
+            app:destination="@id/levels_deprat" />
+    </fragment>
+    <fragment
+        android:id="@+id/professor_profile"
+        android:name="com.example.e_examapp.professor_profile"
+        android:label="professor_profile" >
+        <action
+            android:id="@+id/action_professor_profile_to_computerArchitecture"
+            app:destination="@id/computerArchitecture" />
+        <action
+            android:id="@+id/action_professor_profile_to_computerProgramming"
+            app:destination="@id/computerProgramming" />
+    </fragment>
+    <fragment
+        android:id="@+id/student_profile"
+        android:name="com.example.e_examapp.student_profile"
+        android:label="student_profile" >
+        <action
+            android:id="@+id/action_student_profile_to_exam"
+            app:destination="@id/exam" />
+    </fragment>
+    <activity
+        android:id="@+id/results"
+        android:name="com.example.e_examapp.results"
+        android:label="results" />
+    <fragment
+        android:id="@+id/exam"
+        android:name="com.example.e_examapp.startquiz"
+        android:label="exam" >
+        <action
+            android:id="@+id/action_exam_to_exam2"
+            app:destination="@id/exam2" />
+    </fragment>
+    <fragment
+        android:id="@+id/levels_deprat"
+        android:name="com.example.e_examapp.levels_deprat"
+        android:label="levels_deprat" >
+        <action
+            android:id="@+id/action_levels_deprat_to_editChapterAdmin"
+            app:destination="@id/editChapterAdmin" />
+    </fragment>
+    <fragment
+        android:id="@+id/main"
+        android:name="com.example.e_examapp.main"
+        android:label="main" >
+        <action
+            android:id="@+id/action_main_to_admin_login"
+            app:destination="@id/admin_login" />
+        <action
+            android:id="@+id/action_main_to_register_prof_student"
+            app:destination="@id/register_prof_student" />
+        <action
+            android:id="@+id/action_main_to_exam"
+            app:destination="@id/exam" />
+    </fragment>
+    <fragment
+        android:id="@+id/computerArchitecture"
+        android:name="com.example.e_examapp.ComputerArchitecture"
+        android:label="fragment_computer_architecture"
+        tools:layout="@layout/fragment_computer_architecture" />
+    <fragment
+        android:id="@+id/computerProgramming"
+        android:name="com.example.e_examapp.ComputerProgramming"
+        android:label="fragment_computer_programming"
+        tools:layout="@layout/fragment_computer_programming" />
+    <fragment
+        android:id="@+id/editChapterAdmin"
+        android:name="com.example.e_examapp.editChapterAdmin"
+        android:label="fragment_edit_chapter_admin"
+        tools:layout="@layout/fragment_edit_chapter_admin" />
+    <fragment
+        android:id="@+id/exam2"
+        android:name="com.example.e_examapp.exam"
+        android:label="fragment_exam"
+        tools:layout="@layout/fragment_exam" >
+        <action
+            android:id="@+id/action_exam2_to_results"
+            app:destination="@id/results" />
+    </fragment>
+</navigation>
